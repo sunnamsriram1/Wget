@@ -17,5 +17,5 @@
 git clone https://github.com/sunnamsriram1/Wget.git
 cd Wget
 python S_WGET_Tool.py
-python S_WGET_Tool_1v.py
+python S_WGET_Tool_2v.py
 ```
