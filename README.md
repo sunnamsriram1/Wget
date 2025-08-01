@@ -13,3 +13,9 @@
 ## 🛠️ ఉపయోగించే విధానం
 
 **కొనసాగించే డౌన్లోడ్ కోసం:**
+```
+git clone https://github.com/sunnamsriram1/Wget.git
+cd Wget
+python S_WGET_Tool.py
+python S_WGET_Tool_1v.py
+```
