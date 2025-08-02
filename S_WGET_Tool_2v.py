@@ -37,6 +37,7 @@ def website_mirror():
     cmd = f'wget --mirror --convert-links --no-parent --level={level} "{url}"'
     print("🔁 Mirroring full website...\n")
     os.system(cmd)
+    print('Mirroring Full Website Complete 💯 Download')
 
 def auth_download():
     url = input("🔒 Enter URL: ").strip()
