@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import os
 
 def banner():
@@ -49,28 +50,31 @@ def tor_download():
     os.system(f'torsocks wget "{url}"')
 
 def main():
-    banner()
-    while True:
-        menu()
-        choice = input("👉 Choose an option (0-6): ").strip()
-
-        if choice == "1":
-            single_download()
-        elif choice == "2":
-            resume_download()
-        elif choice == "3":
-            multiple_download()
-        elif choice == "4":
-            website_mirror()
-        elif choice == "5":
-            auth_download()
-        elif choice == "6":
-            tor_download()
-        elif choice == "0":
-            print("👋 Exiting S_WGET_TOOL.")
-            break
-        else:
-            print("❌ Invalid option, try again.")
+    try:
+        banner()
+        while True:
+            menu()
+            choice = input("👉 Choose an option (0-6): ").strip()
+            if choice == "1":
+                single_download()
+            elif choice == "2":
+                resume_download()
+            elif choice == "3":
+                multiple_download()
+            elif choice == "4":
+                website_mirror()
+            elif choice == "5":
+                auth_download()
+            elif choice == "6":
+                tor_download()
+            elif choice == "0":
+                print("👋 Exiting S_WGET_TOOL.")
+                break
+            else:
+                print("❌ Invalid option, try again.")
+    except KeyboardInterrupt:
+        print("\n❌ Program interrupted by user. Exiting gracefully.")
 
 if __name__ == "__main__":
     main()
+                
